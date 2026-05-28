@@ -1,0 +1,6 @@
+interface:
+  display_name: "Навигатор Спецификаций San Porfume"
+  short_description: "Навигация по спекам San Porfume"
+  default_prompt: "Используй $san-porfume-spec-router, чтобы найти нужную спецификацию San Porfume перед изменением требований или кода."
+policy:
+  allow_implicit_invocation: true
