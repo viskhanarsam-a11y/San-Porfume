@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Porfume - оригинальные ароматы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="San Porfume">
+        <span class="brand-mark">SP</span>
+        <span>San Porfume</span>
+      </a>
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="#assortment">Ароматы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Оригинальная парфюмерия 125 мл</p>
+          <h1 id="hero-title">San Porfume</h1>
+          <p class="hero-lead">Оригинальные ароматы с характером</p>
+          <p class="hero-copy">
+            Подберите парфюм и свяжитесь с продавцом напрямую через WhatsApp
+            или Telegram. Без корзины, лишних шагов и долгого оформления.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#assortment">Смотреть ароматы</a>
+            <a class="button button-ghost" href="tel:+79287352134">Позвонить продавцу</a>
+          </div>
+        </div>
+
+        <div class="hero-display" aria-label="Витрина аромата">
+          <div class="hero-bottle-card">
+            <span class="original-badge">Оригинальный товар</span>
+            <img
+              src="Фото/platine-blanc-aromatix.avif"
+              alt="Флакон аромата Aromatix French Avenue"
+            />
+            <div class="hero-product-note">
+              <span>В наличии</span>
+              <strong>Platine Blanc Aromatix</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="assortment-section" id="assortment" aria-labelledby="assortment-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Ассортимент</p>
+          <h2 id="assortment-title">Ароматы в наличии</h2>
+          <p>
+            Небольшая витрина San Porfume: фото, цена, объем, наличие и основные
+            аккорды без перегруза.
+          </p>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="contact-section" id="contacts" aria-labelledby="contacts-title">
+        <div>
+          <p class="eyebrow dark">Связь</p>
+          <h2 id="contacts-title">Напишите продавцу</h2>
+          <p>
+            Выберите аромат и напишите в удобный мессенджер. В сообщение
+            автоматически подставляется название выбранного парфюма.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-whatsapp" href="https://wa.me/79287352134" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+          <a class="button button-telegram" href="https://t.me/" target="_blank" rel="noreferrer">
+            Telegram
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="product-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">×</button>
+        <div class="modal-media">
+          <img id="modal-image" alt="" />
+        </div>
+        <div class="modal-content">
+          <p class="eyebrow dark" id="modal-brand"></p>
+          <h2 id="modal-title"></h2>
+          <div class="modal-meta">
+            <span id="modal-volume"></span>
+            <span id="modal-price"></span>
+            <span id="modal-status"></span>
+          </div>
+          <p id="modal-description"></p>
+
+          <div class="accord-block">
+            <h3>Основные аккорды</h3>
+            <div id="modal-accords"></div>
+          </div>
+
+          <div class="modal-actions">
+            <a class="button button-whatsapp" id="modal-whatsapp" target="_blank" rel="noreferrer">
+              Написать в WhatsApp
+            </a>
+            <a class="button button-telegram" id="modal-telegram" target="_blank" rel="noreferrer">
+              Написать в Telegram
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      <span>San Porfume</span>
+      <span>+7 928 735-21-34</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
